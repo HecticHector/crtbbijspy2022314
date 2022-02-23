@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            crtbbijspy2022314
+        </title>
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+    </head>
+
+    <body>
+            <h2>crtbbijspy2022314</h2>
+
+            <div id="chart"></div>
+            <div id="trades"></div>
+
+            <h3>Setting</h3>
+
+            <div id="settings">
+                <input type="checkbox" /> RSI
+                <input type="text" id="rsi_length" name="rsi_length" placeholder="14" />
+                <input type="text" id="rsi_oversold" name="rsi_oversol" placeholder="30" />
+                <input type="text" id="rsi_bought" name="rsi_bought" placeholder="70" />
+            </div>
+
+        <script>
+            // var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+            
+            var tradeDiv = document.getElementById('trades')
+
+            // binanceSocket.onmessage = function (event) {
+            //     console.log(event.data)
+            
+            //     var messageObject = JSON.parse(event.data)
+            //     tradeDiv.append(messageObject.p)
+            // }
+
+        </script>
+        <script src="chart.js"></script>
+    </body>
+</html>
